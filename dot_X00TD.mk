@@ -14,6 +14,8 @@ $(call inherit-product, vendor/dot/config/common.mk)
 
 # Boot Animation Resolution
 TARGET_BOOT_ANIMATION_RES := 1080
+WITH_GAPPS := true
+TARGET_GAPPS_ARCH := arm64
 
 # Inherit from X00TD device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
