@@ -16,6 +16,7 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 RICE_MAINTAINER := TKTDS
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_GAPPS_ARCH := arm64
 WITH_GMS := true
 SUSHI_BOOTANIMATION := 720
 #TARGET_BUILD_GRAPHENEOS_CAMERA := true
