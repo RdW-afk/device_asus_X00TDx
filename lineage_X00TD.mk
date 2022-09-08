@@ -13,12 +13,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Inherit some riceDroid stuff.
-RICE_MAINTAINER := TIKTODZ
+RICE_MAINTAINER := TKTDS
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
 WITH_GMS := true
-SUSHI_BOOTANIMATION := 1080
-TARGET_BUILD_GRAPHENEOS_CAMERA := true
+SUSHI_BOOTANIMATION := 720
+#TARGET_BUILD_GRAPHENEOS_CAMERA := true
 
 # Inherit from X00TD device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
@@ -35,7 +35,7 @@ PRODUCT_GMS_CLIENTID_BASE := android-asus
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_DEVICE=ASUS_X00T \
     PRODUCT_NAME=WW_X00T \
-    PRIVATE_BUILD_DESC="raven-user 12 SQ3A.220705.003 8671607 release-keys"
+    PRIVATE_BUILD_DESC="raven-user 13 TP1A.220624.021 8877034 release-keys"
 
 # Build fingerprint
-BUILD_FINGERPRINT := "google/raven/raven:12/SQ3A.220705.003/8671607:user/release-keys"
+BUILD_FINGERPRINT := "google/raven/raven:13/TP1A.220624.021/8877034:user/release-keys"
