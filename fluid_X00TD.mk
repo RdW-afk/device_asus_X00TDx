@@ -34,9 +34,9 @@ PRODUCT_BRAND := asus
 PRODUCT_MODEL := Zenfone Max Pro M1
 PRODUCT_MANUFACTURER := asus
 
-PRODUCT_PRODUCT_PROPERTIES += \
-  ro.fluid.maintainer=TIKTOD \
-  ro.fluid.cpu=SDM636
+#PRODUCT_PRODUCT_PROPERTIES += \
+#  ro.fluid.maintainer=TIKTOD \
+#  ro.fluid.cpu=SDM636
 
 PRODUCT_GMS_CLIENTID_BASE := android-asus
 
