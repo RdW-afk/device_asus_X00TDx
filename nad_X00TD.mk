@@ -11,16 +11,15 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk
 
 # Inherit some common Nusantara stuff
 $(call inherit-product, vendor/nusantara/config/common_full_phone.mk)
-$(call inherit-product-if-exists, packages/apps/NusantaraParts/nadproject.mk)
 
 # Inherit from X00TD device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 # Nusantara stuff
-NAD_BUILD_TYPE := UNOFFICIAL
+NAD_BUILD_TYPE := NT
 TARGET_BOOT_ANIMATION_RES := 1080
 USE_PIXEL_CHARGING := true
-TARGET_USES_BLUR := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := nad_X00TD
@@ -34,7 +33,7 @@ PRODUCT_GMS_CLIENTID_BASE := android-asus
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_DEVICE=ASUS_X00T \
     PRODUCT_NAME=WW_X00T \
-    PRIVATE_BUILD_DESC="sdm660_64-user 10 QKQ1 72 release-keys"
+    PRIVATE_BUILD_DESC="raven-user 13 TP1A.220905.004 8927612 release-keys"
 
 # Build fingerprint
-BUILD_FINGERPRINT := "asus/WW_X00TD/ASUS_X00T_2:9/QKQ1/17.2017.2012.438-20201203:user/release-keys"
+BUILD_FINGERPRINT := "google/raven/raven:13/TP1A.220905.004/8927612:user/release-keys"
