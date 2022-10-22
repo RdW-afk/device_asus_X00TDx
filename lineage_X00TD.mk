@@ -13,13 +13,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Inherit some riceDroid stuff.
-RICE_MAINTAINER := dotkit
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_GAPPS_ARCH := arm64
-WITH_GMS := true
-SUSHI_BOOTANIMATION := 1080
-TARGET_BUILD_GRAPHENEOS_CAMERA := true
+#WITH_GMS := true
 
 # Inherit from X00TD device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
