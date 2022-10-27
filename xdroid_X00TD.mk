@@ -11,7 +11,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk
 
 # Inherit some common LineageOS stuff.
 $(call inherit-product, vendor/xdroid/config/common.mk)
-XDROID_BOOT := 1080
 XDROID_MAINTAINER := dotkit
 TARGET_SUPPORTS_QUICK_TAP := true
 
