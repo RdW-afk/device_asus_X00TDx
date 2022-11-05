@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/arrow_X00TD.mk
+    $(LOCAL_DIR)/aosp_X00TD.mk
 
 COMMON_LUNCH_CHOICES := \
-    arrow_X00TD-userdebug \
-    arrow_X00TD-user \
-    arrow_X00TD-eng
+    aosp_X00TD-userdebug \
+    aosp_X00TD-user \
+    aosp_X00TD-eng
