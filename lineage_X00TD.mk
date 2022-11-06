@@ -12,14 +12,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk
 # Inherit some common LineageOS stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-# Inherit some riceDroid stuff.
-RICE_MAINTAINER := dotkit
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
-#TARGET_GAPPS_ARCH := arm64
-RICE_PACKAGE_TYPE := "AOSP"
-SUSHI_BOOTANIMATION := 720
-#TARGET_BUILD_GRAPHENEOS_CAMERA := true
 TARGET_ENABLE_BLUR := false
 
 # Inherit from X00TD device
