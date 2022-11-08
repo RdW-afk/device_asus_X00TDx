@@ -11,12 +11,18 @@ $(call inherit-product, device/asus/sdm660-common/sdm660.mk)
 TARGET_SCREEN_HEIGHT := 2160
 TARGET_SCREEN_WIDTH := 1080
 
-# Powerhint
-EAS_POWERHINT_VARIANT := sdm636
+# Octavi
+PRODUCT_PRODUCT_PROPERTIES += \
+ro.octavi.status=Unofficial
+ro.octavi.branding.version=4.0
+ro.octavi.maintainer=dotkit
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
+
+# Powerhint
+EAS_POWERHINT_VARIANT := sdm636
 
 # Ramdisk
 PRODUCT_PACKAGES += \
