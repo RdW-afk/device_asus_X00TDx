@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/octavi_X00TD.mk
+    $(LOCAL_DIR)/banana_X00TD.mk
 
 COMMON_LUNCH_CHOICES := \
-    octavi_X00TD-userdebug \
-    octavi_X00TD-user \
-    octavi_X00TD-eng
+    banana_X00TD-userdebug \
+    banana_X00TD-user \
+    banana_X00TD-eng
