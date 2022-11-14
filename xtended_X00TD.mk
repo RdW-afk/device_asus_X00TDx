@@ -14,7 +14,7 @@ $(call inherit-product, vendor/xtended/config/common_full_phone.mk)
 
 # Xtended stuff
 TARGET_BOOT_ANIMATION_RES := 1080
-XTENDED_BUILD_MAINTAINER := Tiktodz
+XTENDED_BUILD_MAINTAINER := dotkit
 PROCESSOR_MODEL := SDM660
 
 # Inherit from X00TD device
