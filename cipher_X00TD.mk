@@ -14,7 +14,7 @@ $(call inherit-product, vendor/cipher/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 
 # Maintainer
-CIPHER_MAINTAINER := dotkit
+CIPHER_MAINTAINER := Romeo_Delta_Whiskey
 
 # Inherit from X00TD device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
@@ -31,7 +31,7 @@ PRODUCT_GMS_CLIENTID_BASE := android-asus
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_DEVICE=ASUS_X00T \
     PRODUCT_NAME=WW_X00T \
-    PRIVATE_BUILD_DESC="cheetah-user 13 TD1A.220804.031 9071314 release-keys"
+    PRIVATE_BUILD_DESC="cheetah-user 13 TD1A.221105.001 9104446 release-keys"
 
 # Build fingerprint
-BUILD_FINGERPRINT := "google/cheetah/cheetah:13/TD1A.220804.031/9071314:user/release-keys"
+BUILD_FINGERPRINT := google/cheetah/cheetah:13/TD1A.221105.001/9104446:user/release-keys
