@@ -9,10 +9,15 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
-# Inherit some common LineageOS stuff
+# Inherit some common BananaDroid stuff
 $(call inherit-product, vendor/banana/config/common.mk)
-BANANA_BUILDTYPE := UNOFFICIAL
-TARGET_BOOT_ANIMATION_RES := 1080
+
+BANANA_MAINTAINER := Romeo_Delta_Whiskey
+TARGET_ENABLE_BLUR := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
+
+# GAPPS
+WITH_GAPPS := true
 TARGET_GAPPS_ARCH := arm64
 
 # Inherit from X00TD device
@@ -30,7 +35,9 @@ PRODUCT_GMS_CLIENTID_BASE := android-asus
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_DEVICE=ASUS_X00T \
     PRODUCT_NAME=WW_X00T \
-    PRIVATE_BUILD_DESC="raven-user 12 SQ3A.220605.009.B1 8650216 release-keys"
+    PRIVATE_BUILD_DESC="cheetah-user 13 TD1A.221105.001 9104446 release-keys"
 
 # Build fingerprint
-BUILD_FINGERPRINT := "google/raven/raven:12/SQ3A.220605.009.B1/8650216:user/release-keys"
+BUILD_FINGERPRINT := "google/cheetah/cheetah:13/TD1A.221105.001/9104446:user/release-keys"
+
+
