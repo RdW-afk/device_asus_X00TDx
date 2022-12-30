@@ -5,8 +5,8 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/spark_X00TD.mk
+    $(LOCAL_DIR)/stag_X00TD.mk
 
 COMMON_LUNCH_CHOICES := \
-    spark_X00TD-userdebug
+    stag_X00TD-userdebug
 
