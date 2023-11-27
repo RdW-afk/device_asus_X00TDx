@@ -5,8 +5,8 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/banana_X00TD.mk
+    $(LOCAL_DIR)/afterlife_X00TD.mk
 
 COMMON_LUNCH_CHOICES := \
-    banana_X00TD-userdebug
+    afterlife_X00TD-userdebug
 

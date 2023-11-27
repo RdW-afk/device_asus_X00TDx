@@ -9,22 +9,32 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
-# Inherit some common BananaDroid stuff
-$(call inherit-product, vendor/banana/config/common.mk)
+# Inherit some common AfterLife stuff
+$(call inherit-product, vendor/afterlife/config/common_full_phone.mk)
 
-BANANA_MAINTAINER := Romeo_Delta_Whiskey
-TARGET_ENABLE_BLUR := true
+# AfterLife flags
+AFTERLIFE_MAINTAINER := Romeo_Delta_Wishkey
+
+# Bootanimation
+TARGET_BOOT_ANIMATION_RES := 1080
+
+# Offline Charging
+USE_PIXEL_CHARGING := true
+
+# disable/enable blur support, default is false
+TARGET_SUPPORTS_BLUR := true
+
+# Face Unlock
 TARGET_FACE_UNLOCK_SUPPORTED := true
 
-# GAPPS
-WITH_GAPPS := true
-TARGET_GAPPS_ARCH := arm64
+# TouchGestures
+TARGET_SUPPORTS_TOUCHGESTURES := true
 
 # Inherit from X00TD device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := banana_X00TD
+PRODUCT_NAME := afterlife_X00TD
 PRODUCT_DEVICE := X00TD
 PRODUCT_BRAND := asus
 PRODUCT_MODEL := Zenfone Max Pro M1
@@ -35,9 +45,9 @@ PRODUCT_GMS_CLIENTID_BASE := android-asus
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_DEVICE=ASUS_X00T \
     PRODUCT_NAME=WW_X00T \
-    PRIVATE_BUILD_DESC="cheetah-user 13 TQ1A.221005.011 9244662 release-keys"
+    PRIVATE_BUILD_DESC="walleye-user 8.1.0 OPM1.171019.011 4448085 release-keys"
     
 # Build fingerprint
-BUILD_FINGERPRINT := "google/cheetah/cheetah:13/TQ1A.221205.011/9244662:user/release-keys"
+BUILD_FINGERPRINT := "google/walleye/walleye:8.1.0/OPM1.171019.011/4448085:user/release-keys"
 
 
